@@ -5,7 +5,7 @@ const extension = (joi) => ({
     type: 'string',
     base: joi.string(),
     messages: {
-        'string.escapeHTML': '{{#label}} must not include HTML!'
+        'string.escapeHTML': '{{#label}} must not include HTML or special characters!'
     },
     rules: {
         escapeHTML: { // Prevents cross-site scripting by not allowing html tags or elements to be input by users

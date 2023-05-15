@@ -32,7 +32,6 @@
                 <li class="list-group-item text-secondary"><%= campground.location %></li>
                 <li class="list-group-item">Submitted by <%= campground.author.username %></li>
                 <li class="list-group-item">$<%= campground.price %>/night</li>
-                <li class="list-group-item">A third item</li>
             </ul>
             <% if( currentUser && campground.author.equals(currentUser._id)) { %> <!-- Only show the edit and delete button if the user is the author -->
             <div class="card-body">

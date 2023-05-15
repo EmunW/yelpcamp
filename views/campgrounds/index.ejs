@@ -1,10 +1,18 @@
 <% layout('layouts/boilerplate') %>
 
 <div id="cluster-map"></div>
-<h1> All Campgrounds</h1>
-<div>
-    <a href="/campgrounds/new">Add Campground</a>
-</div>
+    <div class="container px-0">
+        <div class="row">
+            <div class="col-10">
+                <h1>All Campgrounds</h1>
+            </div>
+            <div class="col-2">
+                <div class="d-flex justify-content-end">
+                    <a class="btn btn-success mt-2" href="/campgrounds/new" role="button">Add Campground</a>
+                </div>
+            </div>
+        </div>
+    </div>
 <% for (let campground of campgrounds.reverse()) { %>
     <div class="card mb-3">
         <div class="row">
